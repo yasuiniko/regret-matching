@@ -2,6 +2,8 @@
 
 This repo contains some basic regret matching code and some games to run it on. It can plot results from self-play in real-time. 
 
+To run: `cd path/to/regret-matching` and `python3 main.py`
+
 Algorithms:
 1. Regret matching with strategies knows both players' mixed strategies and uses their product to compute regret.
 2. Regret matching with actions only knows both players' realized strategies. Here realized means that both players observe the same actions rather than independent samples from their mixed strategies.  
