@@ -10,11 +10,20 @@ brew install uv
 ```
 
 ##### Quick start :)
+Note all these games can be edited in the corresponding experiment code.
 
 ```bash
 git clone https://github.com/yasuiniko/regret-matching.git
 cd regret_matching
+
+# convergence and non-convergence of regret matching in a Shapley game
 uv run python -m experiments.strategy_convergence
+
+# visualize joint strategies in a double auction game
+uv run python -m experiments.monte_carlo
+
+# visualize per-player learning trajectories in a double auction game
+uv run python -m experiments.stream_plots
 ```
 
 Algorithms:
