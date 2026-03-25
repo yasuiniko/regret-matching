@@ -26,11 +26,12 @@ uv run python -m experiments.monte_carlo
 uv run python -m experiments.stream_plots
 ```
 
-Algorithms:
+##### Algorithms
+Currently everything is happening in the full information setting (cf bandit information).
 1. 'Regret matching with strategies' knows both players' mixed strategies and uses their product to compute regret.
 2. 'Regret matching with actions' only knows both players' realized strategies. Here realized means that each player randomly samples an action from their strategy, and the sampled actions are observed by all players. 
 
-Games:
+##### Games
 1. **Matching Pennies**. Only has one Nash equilibrium which regret matching's average history of play approaches over time, unless the players start in equilibrium. 
 2. **Chicken**. There are 3 Nash equilibria. The pure Nash equilibria are reached very quickly by the last iterate strategies of both players from almost any starting position. The only exception is when the players start in the unique mixed Nash equilibrium. 
 3. **Shapley**. This game also has only one Nash equilibrium, but the average history of play does not converge to any stationary distribution. 
