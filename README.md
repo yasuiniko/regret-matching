@@ -53,10 +53,10 @@ Currently everything is happening in the full information setting (cf bandit inf
 1. **Matching Pennies**. Only has one Nash equilibrium which regret matching's average history of play approaches over time, unless the players start in equilibrium. 
 2. **Chicken**. There are 3 Nash equilibria. The pure Nash equilibria are reached very quickly by the last iterate strategies of both players from almost any starting position. The only exception is when the players start in the unique mixed Nash equilibrium. 
 3. **Shapley**. This game also has only one Nash equilibrium, but the average history of play does not converge to any stationary distribution. 
-4. **Action Price**. This game describes a double auction for an essential good where the row player is the buyer and the column player is the seller. The buyer values the item at 5 and the seller values the item at 3. The mechanism is that the players are matched if the buyer reports higher than the seller. The buyer pays the price they reported, and their payoff is the delta between their valuation of 5 and the paid amount. The seller receives the price they reported, and their payoff is the delta between their valuation of 3 and the received amount. The auctioneer gets the delta between the two reported values. If there is no match, the buyer must purchase the good from a third party at 7 and the seller must sell the good to a third party at 1. The 3 pure strategy Nash equilibria are bolded. The truthful profile is italicized.
+4. **Action Price**. This game describes a double auction for an essential good where the row player is the buyer and the column player is the seller. The buyer values the item at 5 and the seller values the item at 3. The mechanism is that the players are matched if the buyer reports higher than the seller. The buyer pays the price they reported, and their payoff is the delta between their valuation of 5 and the paid amount. The seller receives the price they reported, and their payoff is the delta between their valuation of 3 and the received amount. The auctioneer gets the delta between the two reported values. If there is no match, the buyer must purchase the good from a third party at 7 and the seller must sell the good to a third party at 1. The 3 Nash equilibria are along the main diagonal, and the truthful profile is in the bottom left corner.
     
     | Buyer \ Seller | $p_s = 3$ | $4$ | $5$ |
     | :--- | :---: | :---: | :---: |
-    | $p_b = 3$ | $\mathbf{(2, 0)}$ | $(-2, -2)$ | $(-2, -2)$ |
-    | $4$ | $(1, 0)$ | $\mathbf{(1, 1)}$ | $(-2, -2)$ |
-    | $5$ | $\mathit{(0, 0)}$ | $(0, 1)$ | $\mathbf{(0, 2)}$ |
+    | $p_b = 3$ | $(2, 0)$ | $(-2, -2)$ | $(-2, -2)$ |
+    | $4$ | $(1, 0)$ | $(1, 1)$ | $(-2, -2)$ |
+    | $5$ | $(0, 0)$ | $(0, 1)$ | $(0, 2)$ |
