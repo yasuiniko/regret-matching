@@ -1,5 +1,8 @@
 ### Regret matching 
 
+> [!WARNING]
+> The repo is in active development and several pieces are quite fragile to changes. Especially, the experiments are designed to highlight aspects of 3x3 games, and have not been tested with 2x2 games. Contributions are welcome.
+
 This repo contains some basic regret matching code and some games to run it on. It can plot results from self-play in real time. 
 
 <table style="width: 100%; border-collapse: collapse;">
